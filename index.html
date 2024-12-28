@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Password generator app</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./code.js" defer></script>
+</head>
+<body>
+  <main>
+    <div class="wrapper">
+      <h1>Password Generator</h1>
+      <div class="password__result">
+        <span class="password">P4$5W0rD!</span>
+        <span class="to__copy"></span>
+      </div>
+
+      <div class="main__content">
+        <label for="amount">Character Length</label>
+        <span .range__amount></span>
+        <input type="range" id="amount" name="amount" max="15">
+
+        <div class="checkboxes">
+          <label><input type="checkbox" id="upperCase" name="upper">Include Uppercase Letters</label>
+          <label><input type="checkbox" id="lowerCase" name="upper">Include Lowercase Letters</label>
+          <label><input type="checkbox" id="number" name="upper">Include Numbers</label>
+          <label><input type="checkbox" id="symbol" name="upper">Include Symbols</label>
+        </div>
+
+        <div class="strength__cont">
+          <span class="strength__cont-title">Strength</span>
+          <div class="strength__cont-text">
+            <span class="description"></span>
+            <span class="progress"></span>
+            <span class="progress"></span>
+            <span class="progress"></span>
+            <span class="progress"></span>
+          </div>
+        </div>
+
+        <button type="button" class="button">Generate</button>
+      </div>
+
+    </div>
+  </main>
+
+  
+
+</body>
+</html>
