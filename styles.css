@@ -5,143 +5,114 @@
     font-style: normal;
 }
 *{
-    margin:0;
-    box-sizing: border-box;
+  margin:0;
+  box-sizing: border-box;
 }
 body{
-    font-family: "JetBrains Mono";
-    color: #E6E5EA;
-    background-color: #000;
-    font-size: 18px;
+  font-family: "JetBrains Mono";
+  color: #E6E5EA;
+  background-color: #000;
+  font-size: 18px;
 }
 .wrapper {
-    margin: 196px auto;
-    width: 540px;
-    position: relative;
+  margin: 196px auto;
+  max-width: 540px;
+  position: relative;
 }
 h1{
-    color: #817D92;
-    font-size: 24px;
-    position: absolute;
-    top: -58px;
-    left: 30%;
+  color: #817D92;
+  font-size: 24px;
+  position: absolute;
+  top: -58px;
+  left: 30%;
 }
 .main__content {
-    background-color: #24232C;
-    height: 632px;
+  background-color: #24232C;
+  height: 632px;
 }
 .password__result {
-    display: flex;
-    justify-content: space-between;
-    padding: 19px 32px;
-    font-size: 32px;
-    border-bottom: 24px solid black;
+  display: flex;
+  justify-content: space-between;
+  padding: 19px 32px;
+  align-items: center;
+  border-bottom: 24px solid black;
+  height: 105px;
+  position: relative;
 }
 .password {
-
+  font-size: 32px;
 }
 .to__copy {
-    cursor: pointer;
-   
+  cursor: pointer;
+  width: 22px;
+  height: 21px;
+}
+.placeholder{
+  color: #817D92;
+}
+.copied{
+  position: absolute;
+  top: 32px;
+  right: 70px;
+  color: #A4FFAF;
+  text-transform: uppercase;
 }
 .icon {
-    fill: #A4FFAF;
-    transition: fill 0.5s; 
-  }
-
-.to__copy:hover .icon{
-    fill:#fff;
+  fill: #A4FFAF;
+  transition: fill 0.5s; 
 }
-
+.to__copy:hover .icon{
+  fill:#fff;
+}
 .container{
-    padding: 0 32px;
+  padding: 0 32px;
 }
 .length_cont{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
 }
 .range__amount{
-    font-size: 32px;
-    color: #A4FFAF;
+  font-size: 32px;
+  color: #A4FFAF;
 }
   
-  /* Стилізація треку */
-  input[type="range"] {
-    -webkit-appearance: none; 
-    appearance: none;
-    width: 100%; 
-    height: 8px; 
-    background: #fff;
-    outline: none;
-    cursor: pointer;
-    margin-top: 26px;
+input[type="range"] {
+  -webkit-appearance: none; 
+  appearance: none;
+  width: 100%; 
+  height: 8px; 
+  background: #18171F;
+  outline: none;
+  cursor: pointer;
+  margin-top: 26px;
   }
-  
-  input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 28px; 
-    height: 28px;
-    background: #fff; 
-    border-radius: 50%; 
-    cursor: pointer;
-    position: relative;
-  }
-  input[type="range"]:hover::-webkit-slider-thumb {
-    background-color: #000;
-    border: 1px solid #A4FFAF;
-  }
-/* input[type="range"]{
-    width: 100%;
-    appearance: none;
-    background-color: #fff;
-    height: 8px;
-    cursor: pointer;
-    
-}
-input[type="range"]::-webkit-slider-runnable-track{
-    background: #A4FFAF;
-    height: 8px;
-}
 input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 28px; 
-    height: 28px;
-    background: #fff; 
-    border-radius: 50%; 
-    cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 28px; 
+  height: 28px;
+  background: #fff; 
+  border-radius: 50%; 
+  cursor: pointer;
+  position: relative;
   }
-  input[type="range"]:hover::-webkit-slider-thumb {
-    background-color: #000;
-    border: 1px solid #A4FFAF;
-  } */
-
-
-
-  /* input[type="range"]::-moz-range-track {
-    background: white; 
-    height: 8px;
-    border-radius: 3px;
-    
+input[type="range"]:hover::-webkit-slider-thumb {
+  background-color: #000;
+  border: 2px solid #A4FFAF;
   }
-  input[type="range"]::-moz-range-progress {
-    background: #A4FFAF; 
-    height: 8px;
-  }*/
-  input[type="range"]::-moz-range-thumb {
-    width: 28px; 
-    height: 28px;
-    background: #fff; 
-    border-radius: 50%; 
-    border: none;
-    cursor: pointer;
+input[type="range"]::-moz-range-thumb {
+  width: 28px; 
+  height: 28px;
+  background: #fff; 
+  border-radius: 50%; 
+  border: none;
+  cursor: pointer;
   }
-  input[type="range"]:hover::-moz-range-thumb {
-    background-color: #000;
-    border: 1px solid #A4FFAF;
+input[type="range"]:hover::-moz-range-thumb {
+  background-color: #000;
+  border: 1px solid #A4FFAF;
   } 
 .checkboxes {
   margin-top: 30px;
@@ -155,7 +126,6 @@ input[type="range"]::-webkit-slider-thumb {
   margin-top: 20px;
 }
 
-
 input[type="checkbox"]{
   appearance: none;
   width: 20px;
@@ -168,13 +138,12 @@ input[type="checkbox"]{
 input[type="checkbox"]:checked{
   background-color: #A4FFAF;
   border: none;
-  /* color: #18171F; */
 }
 input[type="checkbox"]:hover{
   border-color: #A4FFAF;
 }
 input[type="checkbox"]:checked::before {
-  content: ""; /* Порожній вміст */
+  content: ""; 
   position: absolute;
   top: 3px;
   left: 6px;
@@ -182,7 +151,7 @@ input[type="checkbox"]:checked::before {
   height: 10px;
   border-right: 4px solid black;
   border-bottom: 4px solid black;
-  transform: rotate(45deg); /* Обертання для вигляду галочки */
+  transform: rotate(45deg); 
 }
 .strength__cont {
   background-color: #18171F;
@@ -193,9 +162,6 @@ input[type="checkbox"]:checked::before {
   align-items: center;
   text-transform: uppercase;
   min-height: 72px;
-}
-.strength__cont-title {
-
 }
 .strength__cont-text {
   display: flex;
@@ -209,9 +175,8 @@ input[type="checkbox"]:checked::before {
 .progress {
   width: 10px;
   height: 28px;
-  border: 1px solid #E6E5EA;
+  border: 2px solid #E6E5EA;
 }
-
 .red{
   background-color: #f64a4a;
   border-color: #f64a4a;
@@ -254,10 +219,92 @@ input[type="checkbox"]:checked::before {
  .button-icon{
   fill:#24232C;
   margin-left: 16px;
+  height: 13px;
  }
  .button:hover .button-icon{
   fill: #A4FFAF;
  }
  .button:active .button-icon{
   fill: #817D92;
+ }
+
+ @media (max-width: 535px) {
+  .wrapper{
+    margin: 164px auto;
+  }
+  .password{
+    font-size: 24px;
+  }
+ }
+ @media (max-width: 445px) {
+  body{
+    font-size: 16px;
+  }
+  .password{
+    font-size: 18px;
+    height: 18px;
+  }
+ }
+ @media (max-width: 375px) {
+  .wrapper{
+    margin: 80px auto 63px;
+    max-width: 343px;
+  }
+  h1{
+    font-size: 16px;
+    top: -41px;
+  }
+  .main__content{
+    height: unset;
+  }
+  .container{
+    padding: 0 16px;
+  }
+  .password__result{
+    padding: 16px;
+    border-bottom: 16px solid black;
+    height: 80px;
+  }
+  .password{
+    font-size: 18px;
+  }
+  .copied{
+    right: 45px;
+    top: 25px;
+  }
+  .range__amount{
+    font-size: 24px;
+  }
+  .label{
+    gap: 20px;
+  }
+  .label + .label {
+    margin-top: 16px;
+}
+.length_cont{
+  margin-top: 21px;
+}
+input[type="range"]{
+  margin-top: 18px;
+}
+.checkboxes{
+  margin-top: 43px;
+}
+.strength__cont{
+  margin-bottom: 16px;
+  padding: 14px 16px;
+  min-height: unset;
+}
+.title_progress{
+  font-size: 18px;
+}
+.button{
+  font-size: 16px;
+  padding: 1.125em;
+  margin-bottom: 16px;
+}
+.button-icon {
+  margin-left: 8px;
+  height: 12.5px;
+}
  }
