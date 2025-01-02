@@ -302,9 +302,28 @@ input[type="range"]{
   font-size: 16px;
   padding: 1.125em;
   margin-bottom: 16px;
+  border: 2px solid #A4FFAF;
 }
 .button-icon {
   margin-left: 8px;
   height: 12.5px;
+}
+ .button:hover{
+  background-color: #A4FFAF;
+  border: 2px solid #A4FFAF;
+  color: #24232C;
+}
+.button:hover .button-icon{
+  fill: #24232C;
+ }
+ .button:active .button-icon{
+  fill: #817D92;
+ }
+.button:active{
+  background-color: transparent;
+  color: #817D92;
+} 
+.to__copy, .button{
+  -webkit-tap-highlight-color: transparent; 
 }
  }
