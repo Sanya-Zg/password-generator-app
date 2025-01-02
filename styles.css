@@ -323,7 +323,7 @@ input[type="range"]{
   background-color: transparent;
   color: #817D92;
 } 
-.to__copy, .button{
+.to__copy, .button, .label{
   -webkit-tap-highlight-color: transparent; 
 }
  }

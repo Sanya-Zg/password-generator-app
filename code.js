@@ -81,6 +81,7 @@ slider.addEventListener('input', () => {
         if (![...allCheckBoxs].some(item => item.checked)) {
             result = 'Use checkbox';
             return password.textContent = result;
+            
         }
         for(let i = 0; result.length < sliderValue; i++) {
             for (let j = 0; j < allCheckBoxs.length; j++) {
